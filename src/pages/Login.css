@@ -1,8 +1,10 @@
 .meal {
+  margin-top: 5rem;
   width: 100vw;
   height: 600px;
   clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
   background-image: url(../assets/header.png);
+  
 }
 
 .site_heading {
@@ -17,7 +19,7 @@
 
 .site_subheading {
   font-size: 1rem;
-  color: black;
+  color: purple;
   letter-spacing: 6px;
   display: flex;
   justify-content: center;
@@ -25,7 +27,7 @@
 }
 
 .log {
-  padding: 10rem;
+  padding: 0.5rem;
   border-radius: 10px;
 }
 
