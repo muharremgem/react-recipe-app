@@ -9,7 +9,18 @@ const Login = () => {
       <h2 className="site_subheading">
         Login to See All of the Delicious Recipes
       </h2>
-      <img className="meal" src={meal} alt="img" />
+      <div className="meal">
+        <form className="log">
+          <input type="text" name="name" required placeholder="Your name" />
+          <input
+            type="password"
+            name="pass"
+            required
+            placeholder="Your password"
+          />
+          <button type="submit">Login</button>
+        </form>
+      </div>
     </div>
   );
 };
