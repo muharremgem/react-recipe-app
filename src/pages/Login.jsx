@@ -9,7 +9,7 @@ const Login = () => {
       <h2 className="site_subheading">
         Login to See All of the Delicious Recipes
       </h2>
-      <img className="meal" src={meal} alt="asd"  />
+      <img className="meal" src={meal} alt="img" />
     </div>
   );
 };

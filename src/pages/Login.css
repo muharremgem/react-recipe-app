@@ -11,10 +11,11 @@
   font-weight: bold;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .site_subheading {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: black;
   letter-spacing: 6px;
   display: flex;
