@@ -1,6 +1,6 @@
 .meal {
   width: 100vw;
-  height: 500px;
+  height: 600px;
   clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
   background-image: url(../assets/header.png);
 }
@@ -37,7 +37,6 @@ input {
   box-shadow: 0 0 5px 5px green;
   outline: none;
   font-size: 1.2rem;
-  border-bottom: 4px solid;
 }
 button {
   font-size: 1rem;
