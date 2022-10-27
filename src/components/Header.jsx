@@ -27,39 +27,41 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center mt-5 flex-wrap">
-      <div className="flex gap-7">
-        <input
-          className="p-1 "
-          type="text"
-          placeholder="Search"
-          onChange={(e) => {
-            setSearchBar(e.target.value);
-          }}
-        />
-        <select
-          className="flex text-center rounded-lg p-2 m-3 bg-green-400"
-          onChange={(e) => {
-            setMeal(e.target.value);
-          }}
-        >
-          <option value="breakfast">Breakfast</option>
-          <option value="brunch">Brunch</option>
-          <option value="lunch">Lunch</option>
-          <option value="snack">Snack</option>
-          <option value="teatime">Teatime</option>
-        </select>
-        <button
-          className="rounded-lg text-white w-[5rem]"
-          onClick={() => getApi()}
-        >
-          Search
-        </button>
+    <>
+      <div className="flex justify-center items-center mt-5 flex-wrap">
+        <div className="flex gap-7">
+          <input
+            className="p-1 "
+            type="text"
+            placeholder="Search"
+            onChange={(e) => {
+              setSearchBar(e.target.value);
+            }}
+          />
+          <select
+            className="flex text-center rounded-lg p-2 m-3 bg-green-400"
+            onChange={(e) => {
+              setMeal(e.target.value);
+            }}
+          >
+            <option value="breakfast">Breakfast</option>
+            <option value="brunch">Brunch</option>
+            <option value="lunch">Lunch</option>
+            <option value="snack">Snack</option>
+            <option value="teatime">Teatime</option>
+          </select>
+          <button
+            className="rounded-lg text-white w-[5rem]"
+            onClick={() => getApi()}
+          >
+            Search
+          </button>
+        </div>
       </div>
       <div className="flex flex-wrap items-center justify-center">
         {data && data.map((item, idx) => <RecipeCard data={item} key={idx} />)}
       </div>
-    </div>
+    </>
   );
 };
 
