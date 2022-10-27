@@ -6,7 +6,7 @@ const Navbar = () => {
     <div>
       <div className="bg-green-500  font-bold text-white text-xl flex justify-between cursor-pointer items-end py-5 z-10 w-full ">
         <NavLink
-          className="ml-16 transition ease-in-out delay-100 hover:scale-125"
+          className="ml-5 transition ease-in-out delay-100 hover:scale-125"
           to="/home"
           style={({ isActive }) => ({
             color: isActive ? "white" : "",
@@ -26,16 +26,16 @@ const Navbar = () => {
             Home
           </NavLink>
           <NavLink
-            className="transition ease-in-out delay-100 hover:scale-125"
+            className="transition ease-in-out delay-100 hover:scale-125 text-white"
             to="/about"
             style={({ isActive }) => ({
-              color: isActive ? "blue" : "",
+              color: isActive ? "orange" : "",
             })}
           >
             About
           </NavLink>
           <NavLink
-            className="transition ease-in-out delay-100 hover:scale-125 text-white"
+            className="transition ease-in-out delay-100 hover:scale-125"
             to="/"
             style={({ isActive }) => ({
               color: isActive ? "black" : "",
