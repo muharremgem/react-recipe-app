@@ -15,7 +15,7 @@ const Navbar = () => {
           Food House
         </NavLink>
 
-        <div className=" flex gap-5  mr-10 pr-5  ">
+        <div className=" flex gap-5   pr-5  ">
           <NavLink
             className=" transition ease-in-out delay-100 hover:scale-125"
             to="/Home"

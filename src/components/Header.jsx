@@ -28,8 +28,11 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex justify-center items-center mt-5 flex-wrap">
-        <div className="flex gap-7">
+      <div
+        className="flex justify-center items-center mt-5 flex-wrap  lg:flex-col
+      "
+      >
+        <div className="flex gap-2">
           <input
             className="p-1 "
             type="text"
@@ -58,7 +61,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center">
+      <div className="flex flex-wrap items-center justify-center mt-7 bg-green-400">
         {data && data.map((item, idx) => <RecipeCard data={item} key={idx} />)}
       </div>
     </>
