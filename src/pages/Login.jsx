@@ -23,7 +23,9 @@ const Login = () => {
             required
             placeholder="Your password"
           />
-          <button type="submit">Login</button>
+          <button type="submit" className=" text-white bg-green-500">
+            Login
+          </button>
         </form>
       </div>
     </div>
