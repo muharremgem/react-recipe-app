@@ -4,9 +4,9 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div className="bg-green-500 font-bold text-white text-xl flex justify-between cursor-pointer items-end py-5 z-10 w-full ">
+      <div className="bg-green-500  font-bold text-white text-xl flex justify-between cursor-pointer items-end py-5 z-10 w-full ">
         <NavLink
-          className="ml-16 "
+          className="ml-16 transition ease-in-out delay-100 hover:scale-125"
           to="/home"
           style={({ isActive }) => ({
             color: isActive ? "white" : "",
@@ -15,26 +15,34 @@ const Navbar = () => {
           Food House
         </NavLink>
 
-        <div className=" flex gap-5  mr-10 pr-5 ">
+        <div className=" flex gap-5  mr-10 pr-5  ">
           <NavLink
-            className=" transition ease-in-out delay-100 hover:scale-125 "
+            className=" transition ease-in-out delay-100 hover:scale-125"
             to="/Home"
             style={({ isActive }) => ({
-              color: isActive ? "black" : "",
+              color: isActive ? "orange" : "",
             })}
           >
             Home
           </NavLink>
           <NavLink
-            className=""
+            className="transition ease-in-out delay-100 hover:scale-125"
             to="/about"
             style={({ isActive }) => ({
-              color: isActive ? "black" : "",
+              color: isActive ? "blue" : "",
             })}
           >
             About
           </NavLink>
-          <Link to="/">Logout</Link>
+          <NavLink
+            className="transition ease-in-out delay-100 hover:scale-125 text-white"
+            to="/"
+            style={({ isActive }) => ({
+              color: isActive ? "black" : "",
+            })}
+          >
+            Logout
+          </NavLink>
         </div>
       </div>
     </div>
