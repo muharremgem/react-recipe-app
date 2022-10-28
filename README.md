@@ -3,7 +3,7 @@
 
   Project Name       |Libraries and Technologies I use     |How does my project look   
 :-------------------------|-------------------------|-------------------------
-[Task Tracker](https://react-recipe-app-muharremgem.vercel.app/)| Js React | ![Task Tracker](task.gif)
+[Recipe_App](https://react-recipe-app-muharremgem.vercel.app/)| Js React Tailwind | ![Task Tracker](recipe.gif)
 
 
 
@@ -35,6 +35,7 @@ array map method
 
 array some method
 
+TailwindCss
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
