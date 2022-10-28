@@ -1,5 +1,42 @@
 # Getting Started with Create React App
 
+
+  Project Name       |Libraries and Technologies I use     |How does my project look   
+:-------------------------|-------------------------|-------------------------
+[Task Tracker](https://react-recipe-app-muharremgem.vercel.app/)| Js React | ![Task Tracker](task.gif)
+
+
+
+I used;
+
+Components
+
+useState
+
+useEffect
+
+useNavigate
+
+axios
+
+import/export
+
+Props
+
+React Router Dom
+
+React Developer Tool
+
+React Icons
+
+Destructuring props
+
+array map method
+
+array some method
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
