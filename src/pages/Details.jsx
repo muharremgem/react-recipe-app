@@ -7,13 +7,20 @@ const Details = () => {
   console.log(detail);
 
   return (
-    <div>
+    <div className="min-h-screen">
       <Navbar />
       <p className="text-3xl text-center mt-5 font-semibold">{detail.label}</p>
       <div className="flex justify-evenly items-center h-[30rem] flex-wrap">
         <ul>
           <p className="text-xl">Nutriens</p>
           <li>Calcium: {detail.digest[5].total.toFixed()}mg</li>
+          <li>Carbs: {detail.digest[1].total.toFixed()}g</li>
+          <li>Cholesterol: {detail.digest[3].total.toFixed()}mg</li>
+          <li>Energy: {detail.calories.toFixed()}kcal</li>
+          <li>Fat: {detail.digest[0].total.toFixed()}</li>
+          <li>Carbs: {detail.digest[1].total.toFixed()}</li>
+          <li>Protein: {detail.digest[2].total.toFixed()}</li>
+          <li>Cholesterol: {detail.digest[3].total.toFixed()}</li>
         </ul>
         <img
           src={detail.image}
