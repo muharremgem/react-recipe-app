@@ -8,9 +8,13 @@ const About = () => {
     <div>
       <Navbar />
       <div className=" bg-blue-300 w-full h-screen flex flex-col ">
-        <img className="w-[50rem]" src={testi} alt="about" />
+        <img className="w-full" src={testi} alt="about" />
+        <p className="flex justify-center text-3xl font-bold mt-2">
+          Lezzetli Yemek Tarifleri İçin Lütfen Bize Ulaşın...
 
-        <img className="w-[50rem] mt-20" src={offer} alt="about" />
+          <a href=""></a>
+        </p>
+        <img className="w-full  mt-36" src={offer} alt="about" />
       </div>
     </div>
   );
