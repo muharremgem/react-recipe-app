@@ -7,7 +7,7 @@ const Details = () => {
   console.log(detail);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-green-300">
       <Navbar />
       <p className="text-3xl text-center mt-5 font-semibold">{detail.label}</p>
       <div className="flex justify-evenly items-center h-[30rem] flex-wrap">
@@ -30,9 +30,11 @@ const Details = () => {
         />
       </div>
       <ul className="mt-6 ">
-        <p className="text-xl ">Recipe</p>
+        <p className="text-xl flex justify-center ">Recipe</p>
         {detail.ingredientLines.map((item, idx) => (
-          <li key={idx}> {item}</li>
+          <li className="flex justify-center font-bold mt-5" key={idx}>
+            {item}
+          </li>
         ))}
       </ul>
     </div>

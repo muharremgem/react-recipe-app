@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import RecipeCard from "./RecipeCard";
+import offer from "../assets/offer.png";
 
 const Header = () => {
   const [searchBar, setSearchBar] = useState(null);
@@ -60,6 +61,7 @@ const Header = () => {
             Search
           </button>
         </div>
+        <img className="w-full" src={offer} alt="offer" />
       </div>
       <div className="flex flex-wrap items-center justify-center mt-7 bg-green-400">
         {data && data.map((item, idx) => <RecipeCard data={item} key={idx} />)}
