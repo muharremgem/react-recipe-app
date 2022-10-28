@@ -14,7 +14,6 @@ const Details = () => {
         <ul>
           <p className="text-xl">Nutriens</p>
           <li>Calcium: {detail.digest[5].total.toFixed()}mg</li>
-          <li>Carbs: {detail.digestt}</li>
         </ul>
         <img
           src={detail.image}
